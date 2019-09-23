@@ -13,8 +13,16 @@ h1 {
 
 #content .element{
     width: 33%;
-    height: 50%;
+    height: 70%;
     background-color: rgb(117, 221, 31);
     float: left ;
     margin: 1px
+}
+
+#content .element img{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 80%;
+    
 }
