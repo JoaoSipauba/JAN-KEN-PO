@@ -10,28 +10,26 @@ document.getElementById("papel").onclick = function () {
     let userChoice = choices[0];
     let cpuChoice = sort()
     console.log("cpuChoice:" + cpuChoice);
-    console.log("userChoice:" + userChoice);
-    juiz(userChoice,cpuChoice)
+    judge(userChoice,cpuChoice)
+//    document.getElementById("cpu").innerHTML = "<img src = '"+choices[cpuChoice] +".png'>"
 }
 
 document.getElementById("pedra").onclick = function () {
     let userChoice = choices[1];
     let cpuChoice = sort()
     console.log("cpuChoice:" + cpuChoice);
-    console.log("userChoice:" + userChoice);
-    juiz(userChoice,cpuChoice)
+    judge(userChoice,cpuChoice)
     
 }
 
 document.getElementById("tesoura").onclick = function(){        
     let userChoice = choices[2];
     let cpuChoice = sort()
-    console.log("cpuChoice:" + cpuChoice); 
-    console.log("userChoice:" + userChoice);   
-    juiz(userChoice,cpuChoice)
+    console.log("cpuChoice:" + cpuChoice);    
+    judge(userChoice,cpuChoice)
 }
 
-function juiz(userChoice, cpuChoice){
+function judge(userChoice, cpuChoice){
     if (userChoice === cpuChoice){
         console.log("empate");        
     }
