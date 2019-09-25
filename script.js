@@ -1,4 +1,10 @@
-// pedra = 0; papel = 1, tesoura = 2
+choices = ["pedra", "papel", "tesoura"]
+
+function sort(){
+    let randomGet = Math.floor(Math.random() * choices.length);
+    let cpuRandom = choices[randomGet];
+    return cpuRandom
+}
 
 document.getElementById("pedra").onclick = function () {
     let user = choices[0];
@@ -16,12 +22,4 @@ document.getElementById("tesoura").onclick = function(){
     let user = choices[2];
     let cpuChoice = sort()
     console.log("cpuChoice:" + cpuChoice);    
-}
-
-function juiz(userChoice) {
-    let choices = ["pedra", "papel", "tesoura"]
-
-
-    console.log(choices[userChoice]);
-
 }
