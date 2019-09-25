@@ -25,11 +25,25 @@ h1 {
 }
 
 #content .element img{
-    margin-left: 20%;
-    margin-top: 28%;
-    width: 60%;
-    height: 60%;
+    margin-left: 26%;
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
     border: 2px solid #000;
-    border-radius: 15px;
-    
+    border-radius: 15px;   
+}
+
+
+
+#content #cpu {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+#content #cpu img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 15px;  
 }
