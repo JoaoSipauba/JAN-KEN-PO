@@ -1,33 +1,14 @@
-choices = ["papel", "pedra", "tesoura"]
-
 function sort(){
+    const choices = ["papel", "pedra", "tesoura"]
     let randomGet = Math.floor(Math.random() * choices.length);
     let cpuRandom = choices[randomGet];
     return cpuRandom
 }
 
-document.getElementById("papel").onclick = function () {
-    let userChoice = choices[0];
-    let cpuChoice = sort()
-    console.log("cpuChoice:" + cpuChoice);
+function selecionar(evt){
+    let userChoice = evt.target.getAttribute("id")  
+    let cpuChoice = sort();
     document.getElementById("cpu").innerHTML = "<img id='img_cpu' src = '"+cpuChoice +".png'>";
-    judge(userChoice,cpuChoice)
-}
-
-document.getElementById("pedra").onclick = function () {
-    let userChoice = choices[1];
-    let cpuChoice = sort()
-    console.log("cpuChoice:" + cpuChoice);
-    document.getElementById("cpu").innerHTML = "<img id='img_cpu' src = '"+cpuChoice +".png'>";
-    judge(userChoice,cpuChoice)
-    
-}
-
-document.getElementById("tesoura").onclick = function(){        
-    let userChoice = choices[2];
-    let cpuChoice = sort()
-    console.log("cpuChoice:" + cpuChoice);  
-    document.getElementById("cpu").innerHTML = "<img id='img_cpu' src = '"+cpuChoice +".png'>";  
     judge(userChoice,cpuChoice)
 }
 

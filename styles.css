@@ -13,7 +13,6 @@ h2 {
     padding: 10px;
     color: #000;
 }
-
 #content{
     background-color: white;
     width: 600px;
@@ -22,12 +21,10 @@ h2 {
     border-radius: 20px; 
     margin: 0 auto;
 }
-
 #content #imageContainer{
     width: 100%;
     height: 200px;
 }
-
 #content #imageContainer .element{
     width: 33%;
     height: 98%;
@@ -36,7 +33,6 @@ h2 {
     margin: 1px;
     border-radius: 20px;
 }
-
 #content #imageContainer .element img{
     margin-left: 9px;
     margin-top: 8px;
@@ -45,14 +41,11 @@ h2 {
     border: 2px solid #000;
     border-radius: 15px;   
 }
-
 #content #msg{
     width: 100%;
     text-align: center;
     background-color: #FFD043;
 }
-
-
 #content #cpu {
     margin: 0 auto;
     width: 33%;
@@ -60,7 +53,6 @@ h2 {
     background-color: #fffaff;
     border-radius: 20px;
 }
-
 #content #cpu img {
     margin-left: 9px;
     margin-top: 8px;
