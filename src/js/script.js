@@ -8,7 +8,7 @@ function sort(){
 function selecionar(evt){
     let userChoice = evt.target.getAttribute("id")  
     let cpuChoice = sort();
-    document.getElementById("cpu").innerHTML = "<img id='img_cpu' src = '"+cpuChoice +".png'>";
+    document.getElementById("cpu").innerHTML = "<img id='img_cpu' src = 'src/img/"+cpuChoice +".png'>";
     judge(userChoice,cpuChoice)
 }
 
